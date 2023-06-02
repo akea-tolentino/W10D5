@@ -1,9 +1,13 @@
 import harvardArt from "./data/harvardArt";
+import GalleryNavigation from "./components/GalleryNavigation";
+
 
 
 function App() {
+
+  const gallery = harvardArt.records;
   return (
-    <h1>Hello from App</h1>
+    <GalleryNavigation key={gallery.id} galleries={harvardArt.records}/>
   );
 }
 
